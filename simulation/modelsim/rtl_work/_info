@@ -1,0 +1,952 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/cpu/simulation/modelsim
+Ealu
+Z1 w1645806684
+Z2 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 10
+R0
+Z5 8C:/cpu/alu.vhd
+Z6 FC:/cpu/alu.vhd
+l0
+L5 1
+Vf`Lc=d9;58gS6EHVgJQk70
+!s100 ZimcSUhdaN`7lGXcTQ0`@0
+Z7 OV;C;2020.1;71
+31
+Z8 !s110 1651504806
+!i10b 1
+Z9 !s108 1651504806.000000
+Z10 !s90 -reportprogress|300|-93|-work|work|C:/cpu/alu.vhd|
+Z11 !s107 C:/cpu/alu.vhd|
+!i113 1
+Z12 o-93 -work work
+Z13 tExplicit 1 CvgOpt 0
+Artl
+R2
+R3
+R4
+DEx4 work 3 alu 0 22 f`Lc=d9;58gS6EHVgJQk70
+!i122 10
+l36
+L28 74
+ViBCY;Z:X72HC2dP>_Q_Z31
+!s100 IkA9gTJai?1DmeF=cCb:m3
+R7
+31
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Ebasicrisccputestbench
+Z14 w1651380876
+R3
+R4
+!i122 43
+R0
+Z15 8C:/cpu/BasicRISCCPUTestbench.vhd
+Z16 FC:/cpu/BasicRISCCPUTestbench.vhd
+l0
+Z17 L25 1
+VPPI2f3<P5Mz@M3[KUz5980
+!s100 [E9?1<ogU@8mnG6^@?8AG3
+R7
+31
+Z18 !s110 1651510433
+!i10b 1
+Z19 !s108 1651510433.000000
+Z20 !s90 -reportprogress|300|-93|-work|work|C:/cpu/BasicRISCCPUTestbench.vhd|
+Z21 !s107 C:/cpu/BasicRISCCPUTestbench.vhd|
+!i113 1
+R12
+R13
+Abdf_type
+R3
+R4
+Z22 DEx4 work 21 basicrisccputestbench 0 22 PPI2f3<P5Mz@M3[KUz5980
+!i122 43
+l128
+Z23 L28 249
+Z24 VaAB[Znc3IH59Y3QWj=YFo0
+Z25 !s100 @k;3_Wen`nnJ6iT=7Mhzh2
+R7
+31
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 1
+R12
+R13
+Eclkunit
+Z26 w1651380968
+Z27 DPx4 work 8 uart_def 0 22 `Da`nZ:ZD]he<fNW:0^7b2
+R2
+R3
+R4
+!i122 39
+R0
+Z28 8C:/cpu/ClkUnit.vhd
+Z29 FC:/cpu/ClkUnit.vhd
+l0
+Z30 L35 1
+V5W^W4Ol5T1Y9YFB?30eZZ1
+!s100 XdYj@dL?6kl4>YSz583[I3
+R7
+31
+R18
+!i10b 1
+R19
+Z31 !s90 -reportprogress|300|-93|-work|work|C:/cpu/ClkUnit.vhd|
+Z32 !s107 C:/cpu/ClkUnit.vhd|
+!i113 1
+R12
+R13
+Abehaviour
+R27
+R2
+R3
+R4
+DEx4 work 7 clkunit 0 22 5W^W4Ol5T1Y9YFB?30eZZ1
+!i122 39
+l53
+L46 87
+V^>H2PManja_>Ck@28ZPN_1
+!s100 LZBo?L@PFjQ>?^VS^ae1f0
+R7
+31
+R18
+!i10b 1
+R19
+R31
+R32
+!i113 1
+R12
+R13
+Eclock_reset_start
+Z33 w1651380814
+R4
+R3
+!i122 36
+R0
+Z34 8C:/cpu/clock_reset_start.vhd
+Z35 FC:/cpu/clock_reset_start.vhd
+l0
+L5 1
+V=0z0cAKN5NlQjZBc4g^F72
+!s100 981bPR@nbLm26g=Y85Z=@3
+R7
+31
+R18
+!i10b 1
+Z36 !s108 1651510432.000000
+Z37 !s90 -reportprogress|300|-93|-work|work|C:/cpu/clock_reset_start.vhd|
+Z38 !s107 C:/cpu/clock_reset_start.vhd|
+!i113 1
+R12
+R13
+Artl
+R4
+R3
+DEx4 work 17 clock_reset_start 0 22 =0z0cAKN5NlQjZBc4g^F72
+!i122 36
+l22
+L15 33
+V[h4>nb_j?M>l_BH8V3`Z_2
+!s100 ;j^43MhSMjc:<;Y2E@:jD0
+R7
+31
+R18
+!i10b 1
+R36
+R37
+R38
+!i113 1
+R12
+R13
+Econ_logic
+Z39 w1650575553
+R2
+R3
+R4
+!i122 9
+R0
+Z40 8C:/cpu/con_logic.vhd
+Z41 FC:/cpu/con_logic.vhd
+l0
+L5 1
+V5G^RnDJH`>341dQ]X0P821
+!s100 4zcAebmo<NeZ@K]Q7kZMF0
+R7
+31
+R8
+!i10b 1
+R9
+Z42 !s90 -reportprogress|300|-93|-work|work|C:/cpu/con_logic.vhd|
+Z43 !s107 C:/cpu/con_logic.vhd|
+!i113 1
+R12
+R13
+Artl
+R2
+R3
+R4
+DEx4 work 9 con_logic 0 22 5G^RnDJH`>341dQ]X0P821
+!i122 9
+l27
+L16 40
+VWlgQdJ=bHX4[eboc=g@R]1
+!s100 D^ILc^THcN8<Xgj@Qgi6`1
+R7
+31
+R8
+!i10b 1
+R9
+R42
+R43
+!i113 1
+R12
+R13
+Econtrol_signals_logic
+Z44 w1651385618
+R2
+R3
+R4
+!i122 8
+R0
+Z45 8C:/cpu/control_signals_logic.vhd
+Z46 FC:/cpu/control_signals_logic.vhd
+l0
+L5 1
+V^PNJD0[DmggWQbDFK]>j`3
+!s100 =2BBgeZ=<B15eM^R2B4`I0
+R7
+31
+Z47 !s110 1651504805
+!i10b 1
+Z48 !s108 1651504805.000000
+Z49 !s90 -reportprogress|300|-93|-work|work|C:/cpu/control_signals_logic.vhd|
+Z50 !s107 C:/cpu/control_signals_logic.vhd|
+!i113 1
+R12
+R13
+Artl
+R2
+R3
+R4
+DEx4 work 21 control_signals_logic 0 22 ^PNJD0[DmggWQbDFK]>j`3
+!i122 8
+l78
+L73 150
+VIom?H;?HWHdK56^cjf:<c1
+!s100 fm_@`V7SQCz<C6O4D[VGi2
+R7
+31
+R47
+!i10b 1
+R48
+R49
+R50
+!i113 1
+R12
+R13
+Econtrol_unit
+Z51 w1651379966
+R3
+R4
+!i122 1
+R0
+Z52 8C:/cpu/control_unit.vhd
+Z53 FC:/cpu/control_unit.vhd
+l0
+R17
+VGaP;0EklFmIzU_g7f_iZC2
+!s100 n`^GEYcV[5;?ZT`^3fZ6?2
+R7
+31
+R47
+!i10b 1
+Z54 !s108 1651504804.000000
+Z55 !s90 -reportprogress|300|-93|-work|work|C:/cpu/control_unit.vhd|
+Z56 !s107 C:/cpu/control_unit.vhd|
+!i113 1
+R12
+R13
+Abdf_type
+R3
+R4
+DEx4 work 12 control_unit 0 22 GaP;0EklFmIzU_g7f_iZC2
+!i122 1
+l236
+L76 288
+VVa[:i;0T[MEmO]Sm53U]V2
+!s100 3hnBifXmAT4W=L:GUZ01z1
+R7
+31
+R47
+!i10b 1
+R54
+R55
+R56
+!i113 1
+R12
+R13
+Ecpu
+Z57 w1651381961
+R3
+R4
+!i122 11
+R0
+Z58 8C:/cpu/cpu.vhd
+Z59 FC:/cpu/cpu.vhd
+l0
+R17
+V;JVW14;2`P_fiS23N4?D[1
+!s100 0ofG1EJMNRa@giOcLQ=I[0
+R7
+31
+R8
+!i10b 1
+R9
+Z60 !s90 -reportprogress|300|-93|-work|work|C:/cpu/cpu.vhd|
+Z61 !s107 C:/cpu/cpu.vhd|
+!i113 1
+R12
+R13
+Abdf_type
+R3
+R4
+DEx4 work 3 cpu 0 22 ;JVW14;2`P_fiS23N4?D[1
+!i122 11
+l181
+L42 241
+V9VkmLB963OD1>HZVB7X1l2
+!s100 :lEfDR8LW[EhJo<YGm0Z^2
+R7
+31
+R8
+!i10b 1
+R9
+R60
+R61
+!i113 1
+R12
+R13
+Edatapath
+Z62 w1651379785
+R3
+R4
+!i122 0
+R0
+Z63 8C:/cpu/datapath.vhd
+Z64 FC:/cpu/datapath.vhd
+l0
+R17
+V@^CQHH6fa;:;YejPH0A=L3
+!s100 ;o9:89jefan@Z4?Y8mTe11
+R7
+31
+Z65 !s110 1651504804
+!i10b 1
+R54
+Z66 !s90 -reportprogress|300|-93|-work|work|C:/cpu/datapath.vhd|
+Z67 !s107 C:/cpu/datapath.vhd|
+!i113 1
+R12
+R13
+Abdf_type
+R3
+R4
+DEx4 work 8 datapath 0 22 @^CQHH6fa;:;YejPH0A=L3
+!i122 0
+l130
+L65 126
+Vo7TA[E3`AG`mh`dk5zkl^0
+!s100 9Ng]``aGF8c?8F@:YcCc<0
+R7
+31
+R65
+!i10b 1
+R54
+R66
+R67
+!i113 1
+R12
+R13
+Einstruction_register
+Z68 w1650588653
+R3
+R4
+!i122 7
+R0
+Z69 8C:/cpu/instruction_register.vhd
+Z70 FC:/cpu/instruction_register.vhd
+l0
+L4 1
+VIZAM25>cdG;[FRiZ_Bf=c2
+!s100 l8e2GY<JbXSR6dCkL9NOV1
+R7
+31
+R47
+!i10b 1
+R48
+Z71 !s90 -reportprogress|300|-93|-work|work|C:/cpu/instruction_register.vhd|
+Z72 !s107 C:/cpu/instruction_register.vhd|
+!i113 1
+R12
+R13
+Artl
+R3
+R4
+DEx4 work 20 instruction_register 0 22 IZAM25>cdG;[FRiZ_Bf=c2
+!i122 7
+l25
+L22 48
+Vza0SJ2WHmJ9V]GFbzjlJ70
+!s100 T3h^^gK?1T3RcmVGD1=YE1
+R7
+31
+R47
+!i10b 1
+R48
+R71
+R72
+!i113 1
+R12
+R13
+Ememory_bus_controller
+Z73 w1651380796
+R3
+R4
+!i122 37
+R0
+Z74 8C:/cpu/memory_bus_controller.vhd
+Z75 FC:/cpu/memory_bus_controller.vhd
+l0
+L5 1
+V914??=IU`DdM8<ML:D07g2
+!s100 2NoHCTl??die]V0Y7692Z1
+R7
+31
+R18
+!i10b 1
+R19
+Z76 !s90 -reportprogress|300|-93|-work|work|C:/cpu/memory_bus_controller.vhd|
+Z77 !s107 C:/cpu/memory_bus_controller.vhd|
+!i113 1
+R12
+R13
+Artl
+R3
+R4
+DEx4 work 21 memory_bus_controller 0 22 914??=IU`DdM8<ML:D07g2
+!i122 37
+l30
+L23 121
+VOdheLkPZ2]zT^zVIJDjiF2
+!s100 Fl5=[@?mYYjJ^lUi4Jk643
+R7
+31
+R18
+!i10b 1
+R19
+R76
+R77
+!i113 1
+R12
+R13
+Ememory_interface
+Z78 w1647876959
+R2
+R3
+R4
+!i122 6
+R0
+Z79 8C:/cpu/memory_interface.vhd
+Z80 FC:/cpu/memory_interface.vhd
+l0
+L5 1
+VSgiX88;nnbE9BUab6j3;@3
+!s100 AM489ahbRJnKRgX?3VQ6<1
+R7
+31
+R47
+!i10b 1
+R48
+Z81 !s90 -reportprogress|300|-93|-work|work|C:/cpu/memory_interface.vhd|
+Z82 !s107 C:/cpu/memory_interface.vhd|
+!i113 1
+R12
+R13
+Artl
+R2
+R3
+R4
+DEx4 work 16 memory_interface 0 22 SgiX88;nnbE9BUab6j3;@3
+!i122 6
+l29
+L22 66
+VnHa^anSgg;oPDnK@Q`1@b2
+!s100 o3132hAkGzF1e:Gddc>9b0
+R7
+31
+R47
+!i10b 1
+R48
+R81
+R82
+!i113 1
+R12
+R13
+Eminiuart
+Z83 w1651381088
+R27
+R2
+R3
+R4
+!i122 42
+R0
+Z84 8C:/cpu/miniUART.vhd
+Z85 FC:/cpu/miniUART.vhd
+l0
+L32 1
+V>3_8A[f?V2cza4FIL3SPF1
+!s100 RF143RUOVm`M4bPYeXcN]3
+R7
+31
+R18
+!i10b 1
+R19
+Z86 !s90 -reportprogress|300|-93|-work|work|C:/cpu/miniUART.vhd|
+Z87 !s107 C:/cpu/miniUART.vhd|
+!i113 1
+R12
+R13
+Artl
+R27
+R2
+R3
+R4
+DEx4 work 8 miniuart 0 22 >3_8A[f?V2cza4FIL3SPF1
+!i122 42
+l130
+L58 250
+VCIPBH:GYaFOERdm2kigQh0
+!s100 I7D6=>8;7kjCLB4WBUJhJ1
+R7
+31
+R18
+!i10b 1
+R19
+R86
+R87
+!i113 1
+R12
+R13
+Eprogram_counter
+Z88 w1651385525
+R2
+R3
+R4
+!i122 5
+R0
+Z89 8C:/cpu/program_counter.vhd
+Z90 FC:/cpu/program_counter.vhd
+l0
+L5 1
+VnFiKRh;HPj1b;0`N3:;kW2
+!s100 fRbAB^TnfaYY4LiVD=6Cf3
+R7
+31
+R47
+!i10b 1
+R48
+Z91 !s90 -reportprogress|300|-93|-work|work|C:/cpu/program_counter.vhd|
+Z92 !s107 C:/cpu/program_counter.vhd|
+!i113 1
+R12
+R13
+Artl
+R2
+R3
+R4
+DEx4 work 15 program_counter 0 22 nFiKRh;HPj1b;0`N3:;kW2
+!i122 5
+l22
+L17 44
+Vk0ETABY`Nn:KI@AVmh5AK1
+!s100 QIbog?<[XHaESFU3z=KM<3
+R7
+31
+R47
+!i10b 1
+R48
+R91
+R92
+!i113 1
+R12
+R13
+Eram_6116
+Z93 w1650923204
+R2
+R4
+R3
+!i122 34
+R0
+Z94 8C:/cpu/ram_6116.vhd
+Z95 FC:/cpu/ram_6116.vhd
+l0
+L6 1
+VD;a>CCW>7zGe<>9cC>B5>3
+!s100 GA=SVE2Xikc4lSWi;gCJ?0
+R7
+31
+Z96 !s110 1651510432
+!i10b 1
+R36
+Z97 !s90 -reportprogress|300|-93|-work|work|C:/cpu/ram_6116.vhd|
+Z98 !s107 C:/cpu/ram_6116.vhd|
+!i113 1
+R12
+R13
+Artl
+R2
+R4
+R3
+DEx4 work 8 ram_6116 0 22 D;a>CCW>7zGe<>9cC>B5>3
+!i122 34
+l24
+L17 21
+V5L@8oX0eDG7QMI=kd9PDz0
+!s100 [3nD<AQz^=Ei3E@_bVTBB0
+R7
+31
+R96
+!i10b 1
+R36
+R97
+R98
+!i113 1
+R12
+R13
+Eregister_file
+Z99 w1645204321
+R2
+R3
+R4
+!i122 4
+R0
+Z100 8C:/cpu/register_file.vhd
+Z101 FC:/cpu/register_file.vhd
+l0
+L5 1
+VlMde4?L6ZH>?I6enjil8=3
+!s100 ]O]Y07<HhWeIWLg3MDd^;0
+R7
+31
+R47
+!i10b 1
+R48
+Z102 !s90 -reportprogress|300|-93|-work|work|C:/cpu/register_file.vhd|
+Z103 !s107 C:/cpu/register_file.vhd|
+!i113 1
+R12
+R13
+Artl
+R2
+R3
+R4
+DEx4 work 13 register_file 0 22 lMde4?L6ZH>?I6enjil8=3
+!i122 4
+l22
+L18 35
+V61]3P2[9K_g4T62B7>IPz3
+!s100 :5:P3>lgTn@jOn>A7NicT3
+R7
+31
+R47
+!i10b 1
+R48
+R102
+R103
+!i113 1
+R12
+R13
+Erom_27c64
+Z104 w1650923292
+R2
+R4
+R3
+!i122 35
+R0
+Z105 8C:/cpu/rom_27c64.vhd
+Z106 FC:/cpu/rom_27c64.vhd
+l0
+L6 1
+VX:SHoeMG4?Ik^J1eG^U?b2
+!s100 BBCmY?UMTIlaLGBbAPa3J2
+R7
+31
+R96
+!i10b 1
+R36
+Z107 !s90 -reportprogress|300|-93|-work|work|C:/cpu/rom_27c64.vhd|
+Z108 !s107 C:/cpu/rom_27c64.vhd|
+!i113 1
+R12
+R13
+Artl
+R2
+R4
+R3
+DEx4 work 9 rom_27c64 0 22 X:SHoeMG4?Ik^J1eG^U?b2
+!i122 35
+l70
+L19 70
+VX]KQJK5L[R?`GnHODNN;j1
+!s100 GUYH4^USD1czI>ESj[TUi3
+R7
+31
+R96
+!i10b 1
+R36
+R107
+R108
+!i113 1
+R12
+R13
+Erxunit
+Z109 w1651380990
+R27
+R2
+R3
+R4
+!i122 40
+R0
+Z110 8C:/cpu/RxUnit.vhd
+Z111 FC:/cpu/RxUnit.vhd
+l0
+R30
+VAQ35>@d:6k?;MU>PddPTS3
+!s100 3Ie?R[ggm1TmVml`TnB8h0
+R7
+31
+R18
+!i10b 1
+R19
+Z112 !s90 -reportprogress|300|-93|-work|work|C:/cpu/RxUnit.vhd|
+Z113 !s107 C:/cpu/RxUnit.vhd|
+!i113 1
+R12
+R13
+Abehaviour
+R27
+R2
+R3
+R4
+DEx4 work 6 rxunit 0 22 AQ35>@d:6k?;MU>PddPTS3
+!i122 40
+l64
+L51 99
+V8Q;lRzmYW@23=4XNge`Rl3
+!s100 bI;j58Q:b]k9fL[YEf?eR0
+R7
+31
+R18
+!i10b 1
+R19
+R112
+R113
+!i113 1
+R12
+R13
+Esequencer
+Z114 w1651375913
+R2
+R3
+R4
+!i122 3
+R0
+Z115 8C:/cpu/sequencer.vhd
+Z116 FC:/cpu/sequencer.vhd
+l0
+L5 1
+V>]2MZ^QbWjj0mFjNA?IgT3
+!s100 n2SlVA^;cknc<QSnIChBi3
+R7
+31
+R47
+!i10b 1
+R48
+Z117 !s90 -reportprogress|300|-93|-work|work|C:/cpu/sequencer.vhd|
+Z118 !s107 C:/cpu/sequencer.vhd|
+!i113 1
+R12
+R13
+Artl
+R2
+R3
+R4
+DEx4 work 9 sequencer 0 22 >]2MZ^QbWjj0mFjNA?IgT3
+!i122 3
+l55
+L43 201
+Vo9<]S8BmT7QQV`;2]^kzW3
+!s100 6`>b6^E=zOa@<N:A^G3AA2
+R7
+31
+R47
+!i10b 1
+R48
+R117
+R118
+!i113 1
+R12
+R13
+Eshift_control
+Z119 w1650576583
+R2
+R3
+R4
+!i122 2
+R0
+Z120 8C:/cpu/shift_control.vhd
+Z121 FC:/cpu/shift_control.vhd
+l0
+L5 1
+VEenbCZYPQ7II@L;G=]TQk0
+!s100 ZIDmJZzZ?SE>zl1;GGfOM1
+R7
+31
+R47
+!i10b 1
+R48
+Z122 !s90 -reportprogress|300|-93|-work|work|C:/cpu/shift_control.vhd|
+Z123 !s107 C:/cpu/shift_control.vhd|
+!i113 1
+R12
+R13
+Artl
+R2
+R3
+R4
+DEx4 work 13 shift_control 0 22 EenbCZYPQ7II@L;G=]TQk0
+!i122 2
+l21
+L16 33
+V96Y==]acUcK>X2aLIVQM30
+!s100 >5OK>Je0iLR:h9E1Ai];Q1
+R7
+31
+R47
+!i10b 1
+R48
+R122
+R123
+!i113 1
+R12
+R13
+Etxunit
+Z124 w1651381013
+R27
+R2
+R3
+R4
+!i122 41
+R0
+Z125 8C:/cpu/TxUnit.vhd
+Z126 FC:/cpu/TxUnit.vhd
+l0
+L33 1
+V3TMOGOIjcERA2X^k5l]zX2
+!s100 9jA0hl6eR>Slmj>d6mzQi3
+R7
+31
+R18
+!i10b 1
+R19
+Z127 !s90 -reportprogress|300|-93|-work|work|C:/cpu/TxUnit.vhd|
+Z128 !s107 C:/cpu/TxUnit.vhd|
+!i113 1
+R12
+R13
+Abehaviour
+R27
+R2
+R3
+R4
+DEx4 work 6 txunit 0 22 3TMOGOIjcERA2X^k5l]zX2
+!i122 41
+l57
+L48 63
+V:3_EglC2VPBQT`RTk:LUm2
+!s100 ]LV]R`jYLT0zXd;1MkzDA0
+R7
+31
+R18
+!i10b 1
+R19
+R127
+R128
+!i113 1
+R12
+R13
+Puart_def
+R2
+R3
+R4
+!i122 38
+Z129 w1651380940
+R0
+Z130 8C:/cpu/uart_lib.vhd
+Z131 FC:/cpu/uart_lib.vhd
+l0
+L27 1
+V`Da`nZ:ZD]he<fNW:0^7b2
+!s100 ?B`FgE_IT_Kb:9A3z6W?[3
+R7
+31
+b1
+R18
+!i10b 1
+R19
+Z132 !s90 -reportprogress|300|-93|-work|work|C:/cpu/uart_lib.vhd|
+Z133 !s107 C:/cpu/uart_lib.vhd|
+!i113 1
+R12
+R13
+Bbody
+R27
+R2
+R3
+R4
+!i122 38
+l0
+L39 1
+V:6g5g2BMWUo4GCg[OWMWF2
+!s100 2]JFYZUAF8zEJiEK^HzW;0
+R7
+31
+R18
+!i10b 1
+R19
+R132
+R133
+!i113 1
+R12
+R13

@@ -1,0 +1,8 @@
+
+State Machine - |cpu|control_unit:b2v_inst|sequencer:b2v_sequencer_1|current_state
+Name current_state.Write_Q current_state.Read_Q current_state.Run current_state.Stop current_state.Initial 
+current_state.Initial 0 0 0 0 0 
+current_state.Stop 0 0 0 1 1 
+current_state.Run 0 0 1 0 1 
+current_state.Read_Q 0 1 0 0 1 
+current_state.Write_Q 1 0 0 0 1 

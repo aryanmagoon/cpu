@@ -1,0 +1,222 @@
+LIBRARY IEEE ;
+USE IEEE.STD_LOGIC_1164.ALL;
+USE IEEE.NUMERIC_STD.ALL;
+
+entity control_signals_logic is
+  port(
+    opcode : in std_logic_vector(4 downto 0);
+    t0 : in std_logic;
+    t1 : in std_logic;
+    t2 : in std_logic;
+    t3 : in std_logic;
+    t4 : in std_logic;
+    t5 : in std_logic;
+    t6 : in std_logic;
+    t7 : in std_logic;
+    t8 : in std_logic;
+    t9 : in std_logic;
+    t10 : in std_logic;
+    t11 : in std_logic;
+    t12 : in std_logic;
+    t13 : in std_logic;
+    t14 : in std_logic;
+    t15 : in std_logic;
+    neq0      : in   std_logic;
+    con       : in   std_logic;
+	 iack : in std_logic;
+    irin      : out std_logic;
+    c1out     : out std_logic;
+    c2out     : out std_logic;
+    gra       : out std_logic;
+    grb       : out std_logic;
+    grc       : out std_logic;
+    main      : out std_logic;
+    mdbus     : out std_logic;
+    mdrd      : out std_logic;
+    mdout     : out std_logic;
+    pcin      : out std_logic;
+    pcout     : out std_logic;
+    ain       : out std_logic;
+    cin       : out std_logic;
+    cout      : out std_logic;
+    add_op    : out std_logic;
+    sub_op    : out std_logic;
+    neg_op    : out std_logic;
+    and_op    : out std_logic;
+    or_op     : out std_logic;
+    not_op    : out std_logic;
+    shr_op    : out std_logic;
+    shra_op   : out std_logic;
+    shl_op    : out std_logic;
+    shc_op    : out std_logic;
+    ceqb_op   : out std_logic;
+    incr4_op  : out std_logic;
+	 rfi_op : out std_logic;
+    baout     : out std_logic;
+    rin       : out std_logic;
+    rout      : out std_logic;
+    end_sig : out std_logic;
+    stop_sig : out std_logic;
+    read_control : out std_logic; -- to sequencer
+    write_control : out std_logic; -- to sequencer
+    wait_sig : out std_logic;
+    goto6 : out std_logic;
+	 rfi_sig : out std_logic;
+	 een_sig : out std_logic;
+	 edi_sig : out std_logic;
+    conin     : out std_logic;
+    ld_shift      : out std_logic;
+    decr      : out std_logic
+    );
+end control_signals_logic;
+
+architecture rtl of control_signals_logic is
+constant Delay : time := 5 ns;
+signal nop, ld, ldr, st, str, la, lar, br, brl, add, addi, sub, neg, and_instr, andi, or_instr, ori, not_instr, shr, shra, shl, shc, stop, een, edi, rfi : std_logic;
+signal mdbus_internal : std_logic;
+  
+begin
+	read_control <= t1 or(t6 and(ld or ldr)) after Delay;
+	write_control <= t7 and(st or str) after Delay;
+	wait_sig<= t1 or (t6 and(ld or ldr)) or(t7 and(st or str)) after Delay;
+	pcout<= t0 or (t3 and (ldr or str or lar or brl)) after Delay;
+	main<= t0 or (t5 and (ldr or st or str or ld)) after Delay;
+	irin<=t2 after Delay;
+	Rin<= (t7 and (ld or ldr or shr or shra or shl or shc)) or (t5 and (la or lar or add or addi or sub or neg or and_instr or andi or or_instr or ori or not_instr)) or (t3 and brl);
+	rout<= (t6 and (st or str)) or(t3 and br) or (t4 and con and br) or (t4 and brl) or (t5 and con and brl) or (t3 and (add or addi or sub or neg or not_instr or and_instr or andi or or_instr or ori)) or (t4 and (add or sub or neg or not_instr or and_instr or or_instr)) or (t4 and neq0 and (shr or shra or shl or shc)) or (t5 and (shr or shra or shl or shc)) after Delay;
+	baout<= t3 and (ld or st or la) after Delay;
+	gra<= (t7 and (ld or ldr or shr or shra or shl or shc)) or (t6 and (st or str)) or (t5 and (la or lar or add or addi or sub or neg or and_instr or andi or or_instr or ori or not_instr)) or (t3 and brl) after Delay;
+	grb<= (t3 and (st or la or ld or add or addi or sub or and_instr or andi or or_instr or ori)) or (t4 and br) or (t5 and (brl or shr or shra or shl or shc)) after Delay;
+	grc<= (t3 and br) or (t4 and brl) or (t4 and (add or sub or neg or not_instr or and_instr or or_instr)) or (t4 and neq0 and (shr or shra or shl or shc)) after Delay;
+	c1out<= (t4 and (ldr or str or lar)) or (t3 and (shr or shra or shl or shc)) after Delay;
+	c2out<= t4 and (ld or st or la or addi or andi or ori) after Delay;
+	cin<= t0 or (t4 and (ld or ldr or st or str or la or lar or add or addi or sub or neg or and_instr or andi or or_instr or ori or not_instr)) or (t5 and (shr or shra or shl or shc)) or (t6 and not Neq0 and (shr or shra or shl or shc)) after Delay;
+	Ain<= t3 and (ld or ldr or st or str or la or lar or add or addi or sub or and_instr or andi or or_instr or ori) after Delay;
+	Conin<= (t3 and br) or (t4 and brl) after Delay;
+	ld_shift<= (t3 and (shr or shra or shl or shc)) or (t4 and Neq0 and (shr or shra or shl or shc)) after Delay;
+	CeqB_op<= t5 and (shr or shra or shl or shc) after Delay;
+	decr<= t6 and not Neq0 and (shr or shra or shl or shc) after Delay;
+	goto6<=t6 and not Neq0 and (shr or shra or shl or shc) after Delay;
+	stop_sig<= t3 and stop after Delay;
+	incr4_op<=t0 after Delay;
+	add_op<= t4 and (ld or ldr or st or str or la or lar or add or addi) after Delay;
+	sub_op<=t4 and sub after Delay;
+	neg_op<=t4 and neg after Delay;
+	and_op<=t4 and (and_instr or andi) after Delay;
+	or_op<=t4 and (or_instr or ori) after Delay;
+	not_op<=t4 and not_instr after Delay;
+	shr_op<=t6 and shr after Delay;
+	shra_op<=t6 and shra after Delay;
+	shl_op<= t6 and shl after Delay;
+	shc_op<= t6 and shc after Delay;
+	rfi_op<= t3 and rfi after Delay;
+	rfi_sig<=rfi after Delay;
+	een_sig<=een after Delay;
+	edi_sig<=edi after Delay;
+	mdbus_internal <= t6 and (st or str);
+	mdbus <= mdbus_internal after Delay;
+	mdrd<= not(mdbus_internal) or (t0 and iack) after Delay;
+	mdout <= t2 or (t7 and (ld or ldr)) or (t1 and iack) after Delay;
+	pcin <= t1 or (t4 and con and br) or (t5 and con and brl) or (iack and t1) after Delay;
+	cout<= (t1 and not iack) or (t5 and (ld or ldr or st or str or la or lar)) or (t5 and (add or addi or sub or neg or not_instr or and_instr or andi or or_instr or ori)) or (t6 and not Neq0 and (shr or shra or shl or shc)) or (t7 and (shr or shra or shl or shc)) after Delay;
+	end_sig<= (t3 and nop) or (t7 and (ld or ldr)) or (t7 and (st or str)) or (t5 and (la or lar)) or (t4 and br) or (t5 and brl) or (t5 and (add or addi or sub or neg or not_instr or and_instr or andi or or_instr or ori)) or (t7 and (shr or shra or shl or shc)) or ((t4 and een) or (t4 and edi) or (t4 and rfi)) after Delay;
+opcode_process : process(opcode)
+begin
+	nop<='0';
+	ld<='0';
+	ldr<='0';
+	st<='0';
+	str<='0';
+	la<='0';
+	lar<='0';
+	br<='0';
+	brl<='0';
+	add<='0';
+	addi<='0';
+	sub<='0';
+	neg<='0';
+	and_instr<='0';
+	andi<='0';
+	or_instr<='0';
+	ori<='0';
+	not_instr<='0';
+	shr<='0';
+	shra<='0';
+	shl<='0';
+	shc<='0';
+	stop<='0';
+	
+	case opcode is
+		when "00000" =>
+			nop<='1';
+		when "00001" =>
+			ld<='1';
+		when "00010" =>
+			ldr<='1';
+		when "00011" =>
+			st<='1';
+		when "00100"=>
+			str<='1';
+		when "00101"=>
+			la<='1';
+		when "00110"=>
+			lar<='1';
+		when "00111"=>
+			--do nothing
+		when "01000" =>
+			br<='1';
+		when "01001"=>
+			brl<='1';
+		when "01010"=>
+			een<='1';
+		when "01011"=>
+			edi<='1';
+		when "01100"=>
+			add<='1';
+		when "01101"=>
+			addi<='1';
+		when "01110"=>
+			sub<='1';
+		when "01111"=>
+			neg<='1';
+		when "10000"=>
+			--do nothing
+		when "10001"=>
+			--do nothing
+		when "10010"=>
+			--do nothing
+		when "10011"=>
+			--do nothing
+		when "10100"=>
+			and_instr<='1';
+		when "10101"=>
+			andi<='1';
+		when "10110"=>
+			or_instr<='1';
+		when "10111"=>
+			ori<='1';
+		when "11000"=>
+			not_instr<='1';
+		when "11001"=>
+			--do nothing
+		when "11010"=>
+			shr<='1';
+		when "11011"=>
+			shra<='1';
+		when "11100"=>
+			shl<='1';
+		when "11101"=>
+			shc<='1';
+		when "11110"=>
+			rfi<='1';
+		when "11111"=>
+			stop<='1';	
+		when others=>
+			-- do nothing
+	end case;
+end process;
+	
+	
+
+  
+end rtl;

@@ -1,0 +1,691 @@
+# Reading pref.tcl
+# do cpu_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {C:/cpu/datapath.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:20:04 on May 02,2022
+# vcom -reportprogress 300 -93 -work work C:/cpu/datapath.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity datapath
+# -- Compiling architecture bdf_type of datapath
+# End time: 11:20:04 on May 02,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/cpu/control_unit.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:20:04 on May 02,2022
+# vcom -reportprogress 300 -93 -work work C:/cpu/control_unit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity control_unit
+# -- Compiling architecture bdf_type of control_unit
+# End time: 11:20:05 on May 02,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/cpu/shift_control.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:20:05 on May 02,2022
+# vcom -reportprogress 300 -93 -work work C:/cpu/shift_control.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity shift_control
+# -- Compiling architecture rtl of shift_control
+# End time: 11:20:05 on May 02,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/cpu/sequencer.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:20:05 on May 02,2022
+# vcom -reportprogress 300 -93 -work work C:/cpu/sequencer.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity sequencer
+# -- Compiling architecture rtl of sequencer
+# End time: 11:20:05 on May 02,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/cpu/register_file.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:20:05 on May 02,2022
+# vcom -reportprogress 300 -93 -work work C:/cpu/register_file.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity register_file
+# -- Compiling architecture rtl of register_file
+# End time: 11:20:05 on May 02,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/cpu/program_counter.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:20:05 on May 02,2022
+# vcom -reportprogress 300 -93 -work work C:/cpu/program_counter.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity program_counter
+# -- Compiling architecture rtl of program_counter
+# End time: 11:20:05 on May 02,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/cpu/memory_interface.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:20:05 on May 02,2022
+# vcom -reportprogress 300 -93 -work work C:/cpu/memory_interface.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity memory_interface
+# -- Compiling architecture Rtl of memory_interface
+# End time: 11:20:05 on May 02,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/cpu/instruction_register.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:20:05 on May 02,2022
+# vcom -reportprogress 300 -93 -work work C:/cpu/instruction_register.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity instruction_register
+# -- Compiling architecture rtl of instruction_register
+# End time: 11:20:05 on May 02,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/cpu/control_signals_logic.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:20:05 on May 02,2022
+# vcom -reportprogress 300 -93 -work work C:/cpu/control_signals_logic.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity control_signals_logic
+# -- Compiling architecture rtl of control_signals_logic
+# End time: 11:20:06 on May 02,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/cpu/con_logic.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:20:06 on May 02,2022
+# vcom -reportprogress 300 -93 -work work C:/cpu/con_logic.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity con_logic
+# -- Compiling architecture rtl of con_logic
+# End time: 11:20:06 on May 02,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/cpu/alu.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:20:06 on May 02,2022
+# vcom -reportprogress 300 -93 -work work C:/cpu/alu.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity alu
+# -- Compiling architecture rtl of alu
+# End time: 11:20:06 on May 02,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/cpu/cpu.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:20:06 on May 02,2022
+# vcom -reportprogress 300 -93 -work work C:/cpu/cpu.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity cpu
+# -- Compiling architecture bdf_type of cpu
+# End time: 11:20:06 on May 02,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+do testbench.do
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:20:26 on May 02,2022
+# vcom -reportprogress 300 -93 -work work C:/cpu/ram_6116.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity ram_6116
+# -- Compiling architecture rtl of ram_6116
+# End time: 11:20:26 on May 02,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:20:26 on May 02,2022
+# vcom -reportprogress 300 -93 -work work C:/cpu/rom_27c64.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity rom_27C64
+# -- Compiling architecture rtl of rom_27C64
+# End time: 11:20:27 on May 02,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:20:27 on May 02,2022
+# vcom -reportprogress 300 -93 -work work C:/cpu/clock_reset_start.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity clock_reset_start
+# -- Compiling architecture rtl of clock_reset_start
+# End time: 11:20:27 on May 02,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:20:27 on May 02,2022
+# vcom -reportprogress 300 -93 -work work C:/cpu/memory_bus_controller.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity memory_bus_controller
+# -- Compiling architecture RTL of memory_bus_controller
+# End time: 11:20:27 on May 02,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:20:27 on May 02,2022
+# vcom -reportprogress 300 -93 -work work C:/cpu/miniUART.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# ** Error: (vcom-11) Could not find work.uart_def.
+# ** Error (suppressible): C:/cpu/miniUART.vhd(30): (vcom-1195) Cannot find expanded name "work.UART_Def".
+# ** Error: C:/cpu/miniUART.vhd(30): Unknown expanded name.
+# ** Note: C:/cpu/miniUART.vhd(32): VHDL Compiler exiting
+# End time: 11:20:27 on May 02,2022, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+# ** Error: C:/intelFPGA/20.1/modelsim_ase/win32aloem/vcom failed.
+# Error in macro ./testbench.do line 6
+# C:/intelFPGA/20.1/modelsim_ase/win32aloem/vcom failed.
+#     while executing
+# "vcom -93 -work work {C:/cpu/miniUART.vhd}"
+do testbench.do
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:30:04 on May 02,2022
+# vcom -reportprogress 300 -93 -work work C:/cpu/ram_6116.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity ram_6116
+# -- Compiling architecture rtl of ram_6116
+# End time: 11:30:05 on May 02,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:30:05 on May 02,2022
+# vcom -reportprogress 300 -93 -work work C:/cpu/rom_27c64.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity rom_27C64
+# -- Compiling architecture rtl of rom_27C64
+# End time: 11:30:05 on May 02,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:30:05 on May 02,2022
+# vcom -reportprogress 300 -93 -work work C:/cpu/clock_reset_start.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity clock_reset_start
+# -- Compiling architecture rtl of clock_reset_start
+# End time: 11:30:05 on May 02,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:30:05 on May 02,2022
+# vcom -reportprogress 300 -93 -work work C:/cpu/memory_bus_controller.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity memory_bus_controller
+# -- Compiling architecture RTL of memory_bus_controller
+# End time: 11:30:05 on May 02,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:30:05 on May 02,2022
+# vcom -reportprogress 300 -93 -work work C:/cpu/ClkUnit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# ** Error: (vcom-11) Could not find work.uart_def.
+# ** Error (suppressible): C:/cpu/ClkUnit.vhd(31): (vcom-1195) Cannot find expanded name "work.UART_Def".
+# ** Error: C:/cpu/ClkUnit.vhd(31): Unknown expanded name.
+# ** Note: C:/cpu/ClkUnit.vhd(35): VHDL Compiler exiting
+# End time: 11:30:05 on May 02,2022, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+# ** Error: C:/intelFPGA/20.1/modelsim_ase/win32aloem/vcom failed.
+# Error in macro ./testbench.do line 6
+# C:/intelFPGA/20.1/modelsim_ase/win32aloem/vcom failed.
+#     while executing
+# "vcom -93 -work work {C:/cpu/ClkUnit.vhd}"
+do testbench.do
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:31:42 on May 02,2022
+# vcom -reportprogress 300 -93 -work work C:/cpu/ram_6116.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity ram_6116
+# -- Compiling architecture rtl of ram_6116
+# End time: 11:31:42 on May 02,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:31:42 on May 02,2022
+# vcom -reportprogress 300 -93 -work work C:/cpu/rom_27c64.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity rom_27C64
+# -- Compiling architecture rtl of rom_27C64
+# End time: 11:31:43 on May 02,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:31:43 on May 02,2022
+# vcom -reportprogress 300 -93 -work work C:/cpu/clock_reset_start.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity clock_reset_start
+# -- Compiling architecture rtl of clock_reset_start
+# End time: 11:31:43 on May 02,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:31:43 on May 02,2022
+# vcom -reportprogress 300 -93 -work work C:/cpu/memory_bus_controller.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity memory_bus_controller
+# -- Compiling architecture RTL of memory_bus_controller
+# End time: 11:31:43 on May 02,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:31:43 on May 02,2022
+# vcom -reportprogress 300 -93 -work work C:/cpu/ClkUnit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# ** Error: (vcom-11) Could not find work.uart_def.
+# ** Error (suppressible): C:/cpu/ClkUnit.vhd(31): (vcom-1195) Cannot find expanded name "work.UART_Def".
+# ** Error: C:/cpu/ClkUnit.vhd(31): Unknown expanded name.
+# ** Note: C:/cpu/ClkUnit.vhd(35): VHDL Compiler exiting
+# End time: 11:31:43 on May 02,2022, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+# ** Error: C:/intelFPGA/20.1/modelsim_ase/win32aloem/vcom failed.
+# Error in macro ./testbench.do line 6
+# C:/intelFPGA/20.1/modelsim_ase/win32aloem/vcom failed.
+#     while executing
+# "vcom -93 -work work {C:/cpu/ClkUnit.vhd}"
+do testbench.do
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:31:59 on May 02,2022
+# vcom -reportprogress 300 -93 -work work C:/cpu/ram_6116.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity ram_6116
+# -- Compiling architecture rtl of ram_6116
+# End time: 11:31:59 on May 02,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:31:59 on May 02,2022
+# vcom -reportprogress 300 -93 -work work C:/cpu/rom_27c64.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity rom_27C64
+# -- Compiling architecture rtl of rom_27C64
+# End time: 11:31:59 on May 02,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:31:59 on May 02,2022
+# vcom -reportprogress 300 -93 -work work C:/cpu/clock_reset_start.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity clock_reset_start
+# -- Compiling architecture rtl of clock_reset_start
+# End time: 11:31:59 on May 02,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:31:59 on May 02,2022
+# vcom -reportprogress 300 -93 -work work C:/cpu/memory_bus_controller.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity memory_bus_controller
+# -- Compiling architecture RTL of memory_bus_controller
+# End time: 11:32:00 on May 02,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:32:00 on May 02,2022
+# vcom -reportprogress 300 -93 -work work C:/cpu/uart_lib.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling package UART_Def
+# -- Compiling package body UART_Def
+# -- Loading package UART_Def
+# End time: 11:32:00 on May 02,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:32:00 on May 02,2022
+# vcom -reportprogress 300 -93 -work work C:/cpu/ClkUnit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package UART_Def
+# -- Compiling entity ClkUnit
+# -- Compiling architecture Behaviour of ClkUnit
+# End time: 11:32:00 on May 02,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:32:00 on May 02,2022
+# vcom -reportprogress 300 -93 -work work C:/cpu/RxUnit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package UART_Def
+# -- Compiling entity RxUnit
+# -- Compiling architecture Behaviour of RxUnit
+# End time: 11:32:00 on May 02,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:32:00 on May 02,2022
+# vcom -reportprogress 300 -93 -work work C:/cpu/TxUnit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package UART_Def
+# -- Compiling entity TxUnit
+# -- Compiling architecture Behaviour of TxUnit
+# End time: 11:32:00 on May 02,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:32:00 on May 02,2022
+# vcom -reportprogress 300 -93 -work work C:/cpu/miniUART.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package UART_Def
+# -- Compiling entity miniUART
+# -- Compiling architecture rtl of miniUART
+# End time: 11:32:00 on May 02,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:32:00 on May 02,2022
+# vcom -reportprogress 300 -93 -work work C:/cpu/BasicRISCCPUTestbench.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity BasicRISCCPUTestbench
+# -- Compiling architecture bdf_type of BasicRISCCPUTestbench
+# End time: 11:32:01 on May 02,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vsim work.basicrisccputestbench
+# vsim work.basicrisccputestbench 
+# Start time: 11:32:13 on May 02,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.basicrisccputestbench(bdf_type)
+# Loading ieee.numeric_std(body)
+# Loading work.ram_6116(rtl)
+# Loading work.clock_reset_start(rtl)
+# Loading work.rom_27c64(rtl)
+# Loading work.cpu(bdf_type)
+# Loading work.memory_interface(rtl)
+# Loading work.control_unit(bdf_type)
+# Loading work.sequencer(rtl)
+# Loading work.shift_control(rtl)
+# Loading work.con_logic(rtl)
+# Loading work.control_signals_logic(rtl)
+# Loading work.datapath(bdf_type)
+# Loading work.register_file(rtl)
+# Loading work.instruction_register(rtl)
+# Loading work.program_counter(rtl)
+# Loading work.alu(rtl)
+# Loading work.memory_bus_controller(rtl)
+# Loading work.uart_def(body)
+# Loading work.miniuart(rtl)
+# Loading work.clkunit(behaviour)
+# Loading work.txunit(behaviour)
+# Loading work.rxunit(behaviour)
+add wave -position insertpoint  \
+sim:/basicrisccputestbench/b2v_BasicRISCCPU/b2v_inst6/b2v_inst/registers(3)
+add wave -position insertpoint  \
+sim:/basicrisccputestbench/b2v_BasicRISCCPU/b2v_inst6/b2v_inst/registers(4)
+add wave -position insertpoint  \
+sim:/basicrisccputestbench/b2v_BasicRISCCPU/b2v_inst5/b2v_inst/current_state
+run 500 us
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /basicrisccputestbench/b2v_BasicRISCCPU/b2v_inst5/b2v_inst2
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 600 ns  Iteration: 3  Instance: /basicrisccputestbench/b2v_BasicRISCCPU/b2v_inst5/b2v_inst2
+add wave -position insertpoint  \
+sim:/basicrisccputestbench/b2v_BasicRISCCPU/b2v_inst5/b2v_inst/ireq
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run 500 us
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /basicrisccputestbench/b2v_BasicRISCCPU/b2v_inst5/b2v_inst2
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 600 ns  Iteration: 3  Instance: /basicrisccputestbench/b2v_BasicRISCCPU/b2v_inst5/b2v_inst2
+add wave -position insertpoint  \
+sim:/basicrisccputestbench/b2v_BasicRISCCPU/b2v_inst5/b2v_inst/een_sig
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run 500 us
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /basicrisccputestbench/b2v_BasicRISCCPU/b2v_inst5/b2v_inst2
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 600 ns  Iteration: 3  Instance: /basicrisccputestbench/b2v_BasicRISCCPU/b2v_inst5/b2v_inst2
+add wave -position insertpoint  \
+sim:/basicrisccputestbench/b2v_BasicRISCCPU/b2v_inst5/b2v_inst4/een_sig
+add wave -position insertpoint  \
+sim:/basicrisccputestbench/b2v_BasicRISCCPU/b2v_inst5/b2v_inst4/een
+add wave -position insertpoint  \
+sim:/basicrisccputestbench/b2v_BasicRISCCPU/b2v_inst5/b2v_inst4/edi
+add wave -position insertpoint  \
+sim:/basicrisccputestbench/b2v_BasicRISCCPU/b2v_inst5/b2v_inst4/rfi
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run 500 us
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /basicrisccputestbench/b2v_BasicRISCCPU/b2v_inst5/b2v_inst2
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 600 ns  Iteration: 3  Instance: /basicrisccputestbench/b2v_BasicRISCCPU/b2v_inst5/b2v_inst2
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run 500 us
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /basicrisccputestbench/b2v_BasicRISCCPU/b2v_inst5/b2v_inst2
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 600 ns  Iteration: 3  Instance: /basicrisccputestbench/b2v_BasicRISCCPU/b2v_inst5/b2v_inst2
+add wave -position insertpoint  \
+sim:/basicrisccputestbench/b2v_BasicRISCCPU/b2v_inst5/b2v_inst4/opcode
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run 500 us
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /basicrisccputestbench/b2v_BasicRISCCPU/b2v_inst5/b2v_inst2
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 600 ns  Iteration: 3  Instance: /basicrisccputestbench/b2v_BasicRISCCPU/b2v_inst5/b2v_inst2
+add wave -position insertpoint  \
+sim:/basicrisccputestbench/b2v_BasicRISCCPU/b2v_inst5/b2v_inst4/main
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run 500 us
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /basicrisccputestbench/b2v_BasicRISCCPU/b2v_inst5/b2v_inst2
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 600 ns  Iteration: 3  Instance: /basicrisccputestbench/b2v_BasicRISCCPU/b2v_inst5/b2v_inst2
+do testbench.do
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:53:52 on May 02,2022
+# vcom -reportprogress 300 -93 -work work C:/cpu/ram_6116.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity ram_6116
+# -- Compiling architecture rtl of ram_6116
+# End time: 12:53:52 on May 02,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:53:52 on May 02,2022
+# vcom -reportprogress 300 -93 -work work C:/cpu/rom_27c64.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity rom_27C64
+# -- Compiling architecture rtl of rom_27C64
+# End time: 12:53:52 on May 02,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:53:52 on May 02,2022
+# vcom -reportprogress 300 -93 -work work C:/cpu/clock_reset_start.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity clock_reset_start
+# -- Compiling architecture rtl of clock_reset_start
+# End time: 12:53:53 on May 02,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:53:53 on May 02,2022
+# vcom -reportprogress 300 -93 -work work C:/cpu/memory_bus_controller.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity memory_bus_controller
+# -- Compiling architecture RTL of memory_bus_controller
+# End time: 12:53:53 on May 02,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:53:53 on May 02,2022
+# vcom -reportprogress 300 -93 -work work C:/cpu/uart_lib.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling package UART_Def
+# -- Compiling package body UART_Def
+# -- Loading package UART_Def
+# End time: 12:53:53 on May 02,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:53:53 on May 02,2022
+# vcom -reportprogress 300 -93 -work work C:/cpu/ClkUnit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package UART_Def
+# -- Compiling entity ClkUnit
+# -- Compiling architecture Behaviour of ClkUnit
+# End time: 12:53:53 on May 02,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:53:53 on May 02,2022
+# vcom -reportprogress 300 -93 -work work C:/cpu/RxUnit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package UART_Def
+# -- Compiling entity RxUnit
+# -- Compiling architecture Behaviour of RxUnit
+# End time: 12:53:53 on May 02,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:53:53 on May 02,2022
+# vcom -reportprogress 300 -93 -work work C:/cpu/TxUnit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package UART_Def
+# -- Compiling entity TxUnit
+# -- Compiling architecture Behaviour of TxUnit
+# End time: 12:53:53 on May 02,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:53:53 on May 02,2022
+# vcom -reportprogress 300 -93 -work work C:/cpu/miniUART.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package UART_Def
+# -- Compiling entity miniUART
+# -- Compiling architecture rtl of miniUART
+# End time: 12:53:53 on May 02,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:53:53 on May 02,2022
+# vcom -reportprogress 300 -93 -work work C:/cpu/BasicRISCCPUTestbench.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity BasicRISCCPUTestbench
+# -- Compiling architecture bdf_type of BasicRISCCPUTestbench
+# End time: 12:53:53 on May 02,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+run 500 us
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.basicrisccputestbench(bdf_type)
+# Loading work.ram_6116(rtl)
+# Loading work.clock_reset_start(rtl)
+# Loading work.rom_27c64(rtl)
+# Loading work.memory_bus_controller(rtl)
+# Loading work.uart_def(body)
+# Loading work.miniuart(rtl)
+# Loading work.clkunit(behaviour)
+# Loading work.txunit(behaviour)
+# Loading work.rxunit(behaviour)
+run 500 us
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /basicrisccputestbench/b2v_BasicRISCCPU/b2v_inst5/b2v_inst2
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 600 ns  Iteration: 3  Instance: /basicrisccputestbench/b2v_BasicRISCCPU/b2v_inst5/b2v_inst2
+add wave -position insertpoint  \
+sim:/basicrisccputestbench/b2v_BasicRISCCPU/b2v_inst5/b2v_inst/t_counter
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+add wave -position insertpoint  \
+sim:/basicrisccputestbench/b2v_BasicRISCCPU/b2v_inst5/b2v_inst/t_counter
+run 500 us
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /basicrisccputestbench/b2v_BasicRISCCPU/b2v_inst5/b2v_inst2
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 600 ns  Iteration: 3  Instance: /basicrisccputestbench/b2v_BasicRISCCPU/b2v_inst5/b2v_inst2
+# End time: 13:06:04 on May 02,2022, Elapsed time: 1:33:51
+# Errors: 0, Warnings: 2

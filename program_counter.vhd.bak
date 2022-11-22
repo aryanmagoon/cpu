@@ -1,0 +1,41 @@
+LIBRARY IEEE ;
+USE IEEE.STD_LOGIC_1164.ALL;
+use IEEE.numeric_std.all;
+
+entity program_counter is
+  port (
+    Reset : in std_logic;
+	 Clock : in std_logic;
+	 PCin : in std_logic;
+	 PCout : in std_logic;
+	 cpu_bus : inout std_logic_vector(31 downto 0) := (others => 'Z')
+    );
+end program_counter;
+
+architecture rtl of program_counter is
+
+  signal register_contents : std_logic_vector(31 downto 0);
+
+begin  -- rtl
+
+PC_process : process (Reset, Clock, PCin)
+begin
+	if(Reset = '1') then
+		register_contents <= (others => '0');
+
+	elsif(PCin = '1' and rising_edge(Clock)) then
+		register_contents <= cpu_bus;
+	end if;
+end process PC_process;
+
+CPU_process : process(PCout)
+begin
+	if(PCout = '1') then
+		cpu_bus <= register_contents;
+	else
+		cpu_bus <= (others => 'Z');
+	end if;
+end process CPU_process;
+		
+	
+end rtl;
